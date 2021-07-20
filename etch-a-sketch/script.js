@@ -26,7 +26,7 @@ function updateTile(e) {
 
 function resetBoard() {
 	const size = prompt("Board size = (max 100)");
-	if (size > 100) {
+	if (size > 100 || size <= 0) {
 		resetBoard();
 		return;
 	}
