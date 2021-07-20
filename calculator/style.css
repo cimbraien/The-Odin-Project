@@ -1,0 +1,85 @@
+@font-face {
+	font-family: digital7;
+	src: url("./digital-7.ttf");
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 40px;
+	width: 100%;
+	text-align: center;
+	background-color: slategrey;
+}
+
+.calculator {
+	display: inline-grid;
+	margin-top: 55px;
+	padding: 20px;
+	width: 500px;
+	height: 600px;
+	grid-template-columns: repeat(3, 1fr) 1.2fr;
+	grid-template-rows: repeat(6, 1fr);
+	grid-template-areas:
+		"scr scr scr scr"
+		"7 8 9 mult"
+		"4 5 6 div"
+		"1 2 3 add"
+		"0 dot ac sub"
+		"equal equal equal equal";
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
+}
+
+.key {
+	justify-self: center;
+	line-height: 90px;
+	margin: auto;
+	width: 90%;
+	height: 90%;
+	background-color: gray;
+	border-radius: 20px;
+	color: #3a3a3a;
+}
+
+.key-op {
+	justify-self: right;
+	line-height: 90px;
+	margin: auto 0;
+	width: 65%;
+	height: 90%;
+	background-color: gray;
+	border-radius: 10px;
+	color: #3a3a3a;
+}
+
+.equal {
+	grid-area: equal;
+	line-height: 80px;
+	font-size: 130px;
+	margin: auto;
+	width: 95%;
+	height: 90%;
+	background-color: gray;
+	border-radius: 30px;
+}
+
+.scr {
+	grid-area: scr;
+	font-family: digital7;
+	justify-self: center;
+	width: 95%;
+	height: 80%;
+	background-color: rgb(64, 80, 62);
+}
+
+.scr p {
+	float: right;
+	font-size: 70px;
+	line-height: 60px;
+}
