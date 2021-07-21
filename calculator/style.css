@@ -7,6 +7,7 @@
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
+	user-select: none;
 }
 
 body {
@@ -58,6 +59,18 @@ body {
 	color: #3a3a3a;
 }
 
+.key:hover,
+.key-op:hover {
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.key:active,
+.key-op:active {
+	opacity: 1;
+	cursor: pointer;
+}
+
 .equal {
 	grid-area: equal;
 	line-height: 80px;
@@ -73,7 +86,7 @@ body {
 	grid-area: scr;
 	font-family: digital7;
 	justify-self: center;
-	width: 95%;
+	width: 96%;
 	height: 80%;
 	background-color: rgb(64, 80, 62);
 }
